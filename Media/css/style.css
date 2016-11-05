@@ -1,0 +1,47 @@
+       h1{
+        color:#9d78e0;
+        font-family: Verdana;
+            font-family: sans-serif;
+                 }
+      img{
+      width: 20vw;
+         height: auto;
+    }
+      p{
+        color: green;
+
+       }
+       i{
+        font-size: 300%;
+      }
+      .bright{
+        color: orange;
+       }
+       .content{
+          color:rgb(40, 40, 40);      }
+  .sams-serif{
+      font-family: "Arial Narrow", sans-serif;
+       #sub-title{
+       font: bold;      }
+
+
+      nav{
+      width: 100vw;
+         background-color: aqua;
+        align-content: center;
+
+      }
+       #nav-list{
+        list-style-type: none;
+         align-self: center;
+
+       }
+      .list-item{
+         display: inline;
+        align-items: center;
+       }
+       #nav-list>li{
+         display: inline-block;
+       }
+       #nav-list a{}
+     </style>
