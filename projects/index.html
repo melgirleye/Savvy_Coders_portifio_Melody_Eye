@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var name = prompt (" What is your name?" );
+    alert("Hello " + name);
+
+    var favoriteCountry = prompt("What is your favorite country?")
+
+    var freedomCheck = function(country){
+      if(country){
+        if (favoriteCountry === "USA") {
+          alert("Nice");
+        }
+        else if( country==="Mexico"||country==="Honduras"||country==="Spain"){
+            alert("Necesitas max libertad" );
+        }
+        else if( country==="Italy"){
+          alert("Mi scuze");
+        }
+        else {
+          alert ("Looks like you need more FREEDOM");
+        }
+      }
+      else {
+      var newFavoriteCountry = prompt("Please input a country this time for reallies")
+
+          freedomCheck(newFavoriteCountry);
+      }
+  };
+
+    freedomCheck( favoriteCountry);
+    </script>
+  </body>
+  </html>
