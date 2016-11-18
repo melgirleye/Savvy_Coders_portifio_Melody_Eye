@@ -7,25 +7,28 @@
     <title>Projects</title>
   </head>
   <body>
+    <div id="output"></div>
     <script type="text/javascript">
     var name = prompt (" What is your name?" );
-    alert("Hello " + name);
+    var output = document.querySelector("#output");
+    output.innerHTML="<strong> + output.textContent + </strong>"= "Hello " + name;
+
 
     var favoriteCountry = prompt("What is your favorite country?")
 
     var freedomCheck = function(country){
       if(country){
         if (favoriteCountry === "USA") {
-          alert("Nice");
+        output.innerHTML +=" Nice";
         }
         else if( country==="Mexico"||country==="Honduras"||country==="Spain"){
-            alert("Necesitas max libertad" );
+            output.innerHTML +=" Necesitas max libertad" ;
         }
         else if( country==="Italy"){
-          alert("Mi scuze");
+          output.innerHTML +=" Mi scuze";
         }
         else {
-          alert ("Looks like you need more FREEDOM");
+        output.innerHTML +=" Looks like you need more FREEDOM";
         }
       }
       else {

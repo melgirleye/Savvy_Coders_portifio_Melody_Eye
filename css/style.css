@@ -1,41 +1,127 @@
-       h1{
-        color:#9d78e0;
-        font-family: Verdana;
-            font-family: sans-serif;
-                 }
-      img{
-      width: 20vw;
-         height: auto;
-    }
-      p{
-        color: green;
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 10vw;
+	padding: 1em;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ h1{
+  color:#9d78e0;
+  font-family: Verdana;
+  font-family: sans-serif;
+}
+img{
+  width: 20vw;
+  height: auto;
+}
+input[type='text']{
+	font-size: 2em;
+	font-family: georgia,sans-serif;
+	color:grey;
+	flex-wrap: wrap;
 
-       }
-       i{
-        font-size: 300%;
-      }
-      .bright{
-        color: orange;
-       }
-       .content{
-          color:rgb(40, 40, 40);      }
-  .sams-serif{
-      font-family: "Arial Narrow", sans-serif;
-       #sub-title{
-       font: bold;      }
+}
+input[type='submit']{
+	font-size: 2em;
+	padding: 5px;
+	background-color: purple;
+	font-family: georgia;
+	align-self: baseline;
 
 
-      nav{
-      width: 100vw;
-         background-color: aqua;
-        align-content: center;
+}
+#nav-list a{
+	font-size: 2em;
+	color:lightgrey;
+}
+#nav-list a:hover{
+	color: gray;
+	cursor:pointer;
 
-      }
-       #nav-list{
-        list-style-type: none;
-         align-self: center;
+}
+select[name="marketing"]{
+	font-size: 2em;
+	padding: 5px;
+	background-color: purple;
+	font-family: georgia;
+}
+label{
+	font-size: 2em;
+	font-family: Georgia,sans-serif;
+	color: royalblue;
 
-       }
+}
+p{
+  color: green;
+}
+ i{
+  font-size: 300%;
+}
+.content{
+  color:(blue);
+  font-family:"georgia", sans-serif;
+}
+.sams-serif{
+  font-family: "Arial Narrow", sans-serif;
+}
+#sub-title{
+  font-style: bold;
+}
+
+
+nav{
+  width: 100vw;
+  font-size: 2em;
+  align-content: center;
+  border-radius: 3px;
+  background-color: lightblue;
+ align-content: center;
+ position: fixed;
+ top: 0;
+ left:0;
+}
+#nav-list{
+  list-style-type: none;
+  align-self: center;
+
+}
       .list-item{
          display: inline;
         align-items: center;
@@ -43,5 +129,10 @@
        #nav-list>li{
          display: inline-block;
        }
-       #nav-list a{}
-     </style>
+       #nav-list a{
+
+         font-size: 3em;
+         align-self: center;
+
+
+       }
