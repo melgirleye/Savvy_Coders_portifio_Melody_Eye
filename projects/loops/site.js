@@ -28,12 +28,12 @@ output.innerHTML = outputList;
 
 //Rock, Paper , Scissors
 
+var getComputerChoice = function(){
 var runRound= function(){
   var userChoice= prompt(" What would like to play? Rock, Paper, Scissors, please")
   var rng = Math.random();
   var computerChoice="Scissors";
-  var winner="computer"
-  var lowerCaseUserChoice= userChoice.toLowerCase();
+
 
   if(rng<0.33){
       computerChoice="Rock";
@@ -41,6 +41,12 @@ var runRound= function(){
   else if (rng <0.66) {
       computerChoice="Paper";
     }
+    return computerChoice;
+  }
+  var getWinner = function (computerChoice, userChoice) {
+    var winner="computer"
+    var lowerCaseUserChoice= userChoice.toLowerCase();
+
   if (computerChoice==="Scissors" && lowerCaseUserChoice==="Rock") {
     winner="user";
   }
@@ -52,17 +58,53 @@ var runRound= function(){
     winner="user";
 
   }
-  if (computerChoice===userChoice){
-    alert ("There was a tie")
+
+  return winner;
+}
+
+var validateUserChoice =function(userChoice){
+    var lowerCaseUserChoice = userChoice.toLowerCase();
+    return lowerCaseUserChoice === "rock" ||
+      lowerCaseUserChoice === "paper" ||
+      lowerCaseUserChoice === "scissors";
+    }
+
+var runRound = function(){
+  var userChoice = prompt("What would you like to play? Rock, Paper, or Scissors, please");
+  var computerChoice = getComputerChoice();
+  var winner = getWinner(computerChoice, userChoice);
+
+  if(!validateUserChoice( userChoice)){
+    alert("please input a valid command");
+
     runRound();
   }
-  else {
-    alert (" The winner was "+ winner)
+  else{
+    if (computerChoice===userChoice){
+      alert ("There was a tie")
+      runRound();
+    }
 
   }
+
+  }
+    else {
+      alert (" The winner was "+ winner)
+
+          }
+  }
+
+
 }
 var roundCounter= 1;
 while(roundCounter<=5){
   runRound();
   roundCounter++;
 }
+var winnerResults=document.querySelector("#winner");
+var winnerOfAllRounds=winner;
+if (winner >=3 )
+   winnerOfAllRounds= " The winner was " + winner;
+   runRound();
+
+ }

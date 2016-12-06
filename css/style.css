@@ -67,6 +67,10 @@ input[type='submit']{
 
 
 }
+.highlight{
+	color:green;
+	background: red;
+}
 #nav-list a{
 	font-size: 2em;
 	color:lightgrey;
